@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="73" id="KGk-i7-Jjw" customClass="CustomCell" customModule="movieAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTk-w1-i42">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="73"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CBv-KM-pWg">
+                                <rect key="frame" x="8" y="10" width="95" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="JDO-1H-qty"/>
+                                    <constraint firstAttribute="height" constant="55" id="c4D-Q9-34f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVf-Y4-T6r">
+                                <rect key="frame" x="111" y="14" width="195" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="Laa-8G-IOB"/>
+                                    <constraint firstAttribute="height" constant="46" id="RGy-yP-1aF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066385626789999999" green="0.065044052899999996" blue="0.13137388229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CBv-KM-pWg" firstAttribute="leading" secondItem="lTk-w1-i42" secondAttribute="leading" constant="8" id="7nY-hv-1pt"/>
+                            <constraint firstAttribute="height" constant="73" id="8yc-dh-ngZ"/>
+                            <constraint firstAttribute="trailing" secondItem="IVf-Y4-T6r" secondAttribute="trailing" constant="8" id="CRg-pP-88j"/>
+                            <constraint firstAttribute="bottom" secondItem="IVf-Y4-T6r" secondAttribute="bottom" constant="13" id="JTC-3Y-RY9"/>
+                            <constraint firstItem="IVf-Y4-T6r" firstAttribute="leading" secondItem="CBv-KM-pWg" secondAttribute="trailing" constant="8" symbolic="YES" id="KT4-l9-GDy"/>
+                            <constraint firstItem="CBv-KM-pWg" firstAttribute="top" secondItem="lTk-w1-i42" secondAttribute="top" constant="10" id="QqU-qf-TWG"/>
+                            <constraint firstItem="IVf-Y4-T6r" firstAttribute="top" secondItem="lTk-w1-i42" secondAttribute="top" constant="14" id="VeQ-aH-Yso"/>
+                            <constraint firstAttribute="width" constant="314" id="nTo-XS-HZm"/>
+                            <constraint firstAttribute="bottom" secondItem="CBv-KM-pWg" secondAttribute="bottom" constant="8" id="xRD-bW-AR7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lTk-w1-i42" secondAttribute="trailing" id="2Bl-Oo-y2q"/>
+                    <constraint firstItem="lTk-w1-i42" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3b1-Uh-45c"/>
+                    <constraint firstItem="lTk-w1-i42" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4mn-3W-ffQ"/>
+                    <constraint firstAttribute="bottom" secondItem="lTk-w1-i42" secondAttribute="bottom" id="Yub-MK-0Fz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="CBv-KM-pWg" id="Tdv-gO-Exc"/>
+                <outlet property="titleMovieLabel" destination="IVf-Y4-T6r" id="n74-nJ-YQ1"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="70.647321428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
