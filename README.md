@@ -45,7 +45,7 @@ This app use Podfile
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Open the file CovidApp.xcworkspace
+Open the file movieAPI.xcworkspace
 
 ### Prerequisites
 
